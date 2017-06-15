@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="logininput">18dp</dimen>
+    <dimen name="titleDivHeight">45dp</dimen>
+    <dimen name="titleFontSize">20dp</dimen>
+     <dimen name="backFontSize">18dp</dimen>
+    <dimen name="taskbarFontSize">16dp</dimen>
+    <dimen name="detail_font_size">16dp</dimen>
+    <dimen name="detail_font_sizel">15dp</dimen>
+    <dimen name="detail_padding">8dp</dimen>
+    <dimen name="searchbarHeight">20dp</dimen>
+    <dimen name="searchbarmargin">30dp</dimen>
+    <dimen name="inputwidth">150dp</dimen>
+    <dimen name="iconw">30dp</dimen>
+    <dimen name="itemContentFontSize">14dp</dimen>
+    <dimen name="itemTitleFontSize">18dp</dimen>
+    <dimen name="buttonFontSize">18dp</dimen>
+    <dimen name="btn2FontSize">16dp</dimen>
+    <dimen name="tagtextFS">15dp</dimen>
+
+</resources>

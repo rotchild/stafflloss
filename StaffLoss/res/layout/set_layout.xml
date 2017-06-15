@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/title_relative"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本更新"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+       android:id="@+id/setback_iv"
+       android:layout_width="22dp"
+       android:layout_height="22dp"
+       android:src="@drawable/mback"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="10dp"
+        />
+    
+    
+    <!-- 
+    
+           <TextView
+       android:id="@+id/setback_tv"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="返回"
+       android:textColor="@color/white"
+       android:textSize="@dimen/buttonFontSize"
+       android:layout_toRightOf="@id/setback_iv"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="5dp"
+       />
+     -->
+
+<!--  
+    <ImageView
+        android:id="@+id/set_menuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+-->
+
+</RelativeLayout>    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    >
+  <ImageView
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:scaleType="centerInside"
+      android:src="@drawable/logol"
+      android:layout_gravity="center"
+      />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:text="远程定损"
+      android:textColor="@color/morange"
+      android:textSize="16dp"
+      android:layout_gravity="center"
+      />
+  <TextView
+      android:id="@+id/version_id"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="1.0版"
+      android:textColor="@color/textgray"
+      android:textSize="12dp"
+      android:layout_gravity="center"
+       
+      />  
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    >
+    <Button
+        android:id="@+id/checkupdate_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btncancel_background"
+        android:text="检查更新"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
+</LinearLayout>

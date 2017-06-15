@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/title_relative"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择稽核人员"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+    <!-- 
+      <TextView
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜单"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+     -->
+  <!-- 
+  
+       <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/choose_menu"
+       android:src="@drawable/menu"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="5dp"
+       />
+   -->
+
+</RelativeLayout>    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/searchbar_layout"
+    android:layout_below="@id/title_relative"
+    android:padding="10dp"
+    >
+ <EditText
+     android:layout_width="200dp"
+     android:layout_height="40dp"
+     android:id="@+id/search_text"
+     android:hint="请输入关键字"
+     android:textColorHint="@color/textgray"
+     android:textSize="15dp"
+     android:layout_marginLeft="10dp"
+     android:layout_centerVertical="true"
+     android:padding="5dp"
+     android:singleLine="true"
+     android:background="@drawable/input_shape"
+     />
+ <Button
+     android:layout_centerVertical="true"
+     android:layout_width="wrap_content"
+     android:layout_height="40dp"
+     android:id="@+id/search_btn"
+     android:text="查询"
+     android:padding="1dp"
+     android:textColor="@color/white"
+     android:layout_alignParentRight="true"
+     android:layout_marginRight="5dp"
+     android:background="@drawable/searchbtn_background"
+     />   
+</RelativeLayout>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/jiherenlist"
+    android:layout_below="@id/searchbar_layout"
+    />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/jiherenlist"
+    android:layout_marginTop="10dp"
+    android:background="@color/white"
+    android:padding="5dp"
+    >
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+ <LinearLayout
+     android:layout_width="1dp"
+     android:layout_weight="1"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="center"
+     >
+      <Button
+       android:id="@+id/choose_ok_btn"
+       android:layout_width="80dp"
+       android:layout_height="40dp"
+       android:text="确定"
+       android:textColor="@color/white"
+       android:background="@drawable/dialogredbtn_shape"
+       />   
+ </LinearLayout>
+  <LinearLayout
+     android:layout_width="1dp"
+     android:layout_weight="1"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:gravity="center"
+     >
+          <Button
+       android:id="@+id/choose_cancel_btn"
+       android:layout_width="80dp"
+       android:layout_height="40dp"
+       android:text="取消"
+       android:textColor="@color/textgray"
+       android:background="@drawable/dialogwhitebtn_shape"
+       />  
+ </LinearLayout>    
+ </LinearLayout>
+
+
+</RelativeLayout>
+</RelativeLayout>

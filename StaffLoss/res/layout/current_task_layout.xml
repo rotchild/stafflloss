@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/taskbackground"
+     >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/title_relative"
+    >
+    <TextView
+        android:id="@+id/current_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前任务"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+    <!-- 
+    <TextView
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜单"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+     -->
+    <ImageView
+        android:id="@+id/currentTask_menuId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menut"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        />
+</RelativeLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/viewpager_linear"
+    android:layout_below="@id/title_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+   <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:orientation="vertical"
+       >
+       
+   </LinearLayout>
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    >
+    <include layout="@layout/taskbar_bottom"/>
+</RelativeLayout>
+
+
+</RelativeLayout>

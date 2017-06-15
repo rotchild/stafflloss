@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+ <!-- 
+ 存在报案号过长的问题
+  -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <TextView
+     android:id="@+id/item_receiveTimeTv"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text=""
+     android:textSize="14dp"
+     android:layout_alignParentRight="true"
+     android:paddingRight="5dp"
+     />    
+
+     <TextView
+     android:id="@+id/item_reportNoTV"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text=""
+     android:textSize="18dp"
+     android:textColor="@color/taskslidedgray"
+     android:layout_alignParentLeft="true"
+     
+     />   
+
+</RelativeLayout>
+  
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_centerVertical="true"
+       >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+        <TextView
+            android:id="@+id/item_carNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tagtextFS"
+            android:textColor="@color/taskslidedgray"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/item_vipTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/tagtextFS"
+            android:textColor="@color/vipyellow"
+            />    
+      </LinearLayout> 
+      <LinearLayout
+          android:layout_marginTop="10dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+        <TextView
+          android:id="@+id/item_reportDeport"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/tagtextFS"
+          android:textColor="@color/taskslidedgray"
+          />  
+      </LinearLayout>
+      
+   </LinearLayout> 
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:orientation="vertical"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="5dp"
+       >
+     <TextView
+         android:id="@+id/item_taskState"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:textSize="18dp"
+         />  
+   </LinearLayout>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+       
+        >
+    <TextView
+        android:id="@+id/tag_waixiu"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="外修"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:background="@drawable/tag_shape"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/tag_tuiding"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推定"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:background="@drawable/tag_shape"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:id="@+id/tag_jihe"
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="稽核"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:background="@drawable/tag_shape"
+        />          
+    </LinearLayout>
+    
+</RelativeLayout>
+</LinearLayout>

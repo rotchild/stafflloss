@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/taskDetail_RL"
+    >
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="任务详情"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+   
+
+     
+     <!-- 
+     
+          <TextView
+        android:id="@+id/dealingtaskback_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="@dimen/backFontSize"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        />
+      -->
+     
+     <ImageView
+         android:id="@+id/dealingtaskdetailback_iv"
+         android:layout_width="22dp"
+         android:layout_height="22dp"
+         android:src="@drawable/mback"
+         android:scaleType="centerInside"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+         />
+   
+   <!-- 
+     <TextView
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜单"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />  
+    -->
+   <!-- 
+     <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/dealing_menu"
+       android:src="@drawable/menu"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="5dp"
+       />
+    -->
+ 
+  
+</RelativeLayout>
+<ScrollView
+    android:id="@+id/scroll_detail"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/taskDetail_RL"
+    android:layout_above="@+id/button_linear"
+    android:layout_height="match_parent"
+    >
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="报案号："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/reportNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车牌号："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/carNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+           android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车牌型号："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/carType_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="是否为标的车："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/isTheCar_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="标的车牌号："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/theCarNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/reportDeport_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点联系人："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/deportConnector_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点联系电话："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          /> 
+          
+      <ImageView
+           android:id="@+id/calldeparter_iv"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:scaleType="centerInside"
+           android:src="@drawable/phone"
+           android:layout_alignParentRight="true"
+           />  
+      <!-- 
+             <TextView
+          android:id="@+id/deportConnectorphone_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/black"
+          android:layout_toLeftOf="@id/calldeparter_iv"
+          android:clickable="true"
+          />  
+      
+       -->
+
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="送修人姓名："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/reporterName_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="送修人联系电话："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+      
+       <ImageView
+           android:id="@+id/callReporterDepart_iv"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:scaleType="centerInside"
+           android:src="@drawable/phone"
+           android:layout_alignParentRight="true"
+           />
+       <!-- 
+                <TextView
+          android:id="@+id/theReporterPhone_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_toLeftOf="@id/callReporterDepart_iv"
+          android:clickable="true"
+          />
+        -->  
+
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="估损金额："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/theAboutMoney_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:background="@color/backgray"
+        >
+        
+    </LinearLayout>
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="任务分配时间："
+          android:textSize="@dimen/detail_font_sizel"
+          android:textColor="@color/detailFC"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/taskdeliverTime_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+      
+    </RelativeLayout>
+    
+
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        >
+        
+    </RelativeLayout>
+</LinearLayout>  
+</ScrollView>    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/button_linear"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="@color/backgray"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       >
+     <Button
+         android:id="@+id/getPhoto_btn"
+         android:layout_width="105dp"
+         android:layout_height="35dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="30dp"
+         android:text="人车合影"
+         android:textSize="@dimen/buttonFontSize"
+         android:padding="5dp"
+         android:background="@drawable/login_background"
+         android:textColor="@color/white"
+         />  
+      <Button
+         android:id="@+id/waixiu_btn"
+         android:layout_width="105dp"
+         android:layout_height="35dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="30dp"
+         android:text="外修申请"
+         android:textSize="@dimen/buttonFontSize"
+         android:padding="5dp"
+         android:background="@drawable/login_background"
+         android:textColor="@color/white"
+         
+         />  
+   </RelativeLayout>
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       >
+     <Button
+         android:id="@+id/tuiding_btn"
+         android:layout_width="105dp"
+         android:layout_height="35dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="30dp"
+         android:text="推定全损"
+         android:textSize="@dimen/buttonFontSize"
+         android:padding="5dp"
+         android:background="@drawable/login_background"
+         android:textColor="@color/white"
+         
+         />  
+      <Button
+         android:id="@+id/jihe_btn"
+         android:layout_width="105dp"
+         android:layout_height="35dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="30dp"
+         android:text="稽核申请"
+         android:textSize="@dimen/buttonFontSize"
+         android:padding="5dp"
+         android:background="@drawable/login_background"
+         android:textColor="@color/white"
+        
+         />  
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:padding="3dp"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="处理任务前请联系拆检点及拍摄人车合影"
+           android:textSize="12dp"
+           android:textColor="@color/red"
+           />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:padding="5dp"
+       >
+       <Button
+           android:id="@+id/casefinish_btn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="完成"
+           android:textSize="@dimen/buttonFontSize"
+           android:background="@drawable/login_background"
+           android:textColor="@color/white"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           />
+   </RelativeLayout>    
+</LinearLayout>
+</RelativeLayout>

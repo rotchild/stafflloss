@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="taskbackground">#F1F1F1</color>
+     <color name="titlebackground">#FF6666</color>
+     <color name="buttoncolorred">#E1929F</color>
+     <color name="buttoncolorgray">#AEAEAE</color>
+     <color name="linegray">#F5F5F5</color>
+     
+     <color name="framegray">#E4E4E4</color>
+     <color name="framedgray">#949494</color>
+     <color name="waixiuyellow">#FCB18A</color>
+     <color name="textgray">#C4C4C4</color>
+     <color name="mred">#E1929F</color>
+     <color name="tagyellow">#F4C521</color>
+     <color name="taggray">#bababa</color>
+      <color name="taskslidedgray">#787878</color>
+     
+     <color name="taggreen">#19D3BB</color>
+     <color name="mgreen">#00CC33</color>
+     <color name="linebackgray">#E4E4E4</color>
+     <color name="vipyellow">#F4C521</color>
+     <color name="infoblackgray">#666666</color>
+     <color name="backgray">#F5F5F5</color>
+      <color name="detailFC">#7b7b7b</color>
+     
+     
+     <color name="mhintgray">#d8d8d8</color>
+     <color name="mtextgray">#c5c5c5</color>
+     <color name="textgray2">#C4C4C4</color>
+     <color name="morange">#ec5220</color>
+</resources>

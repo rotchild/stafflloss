@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_alignParentBottom="true"
+     >
+ <ImageButton
+    android:id="@+id/cancel_ib"
+    android:layout_width="62dp"
+    android:layout_height="62dp"
+    android:scaleType="centerInside"
+    android:background="@drawable/takephotobackbtn"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="20dp"
+    android:layout_centerVertical="true"
+    android:visibility="gone"
+    android:clickable="false"
+    />
+ <ImageButton
+    android:id="@+id/ok_ib"
+    android:layout_width="62dp"
+    android:layout_height="62dp"
+    android:scaleType="centerInside"
+    android:background="@drawable/takephotookbtn"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:layout_centerVertical="true"
+    android:visibility="gone"
+    android:clickable="false"
+    />          
+<ImageButton
+    android:id="@+id/takePhoto_ib"
+    android:layout_width="62dp"
+    android:layout_height="62dp"
+    android:scaleType="centerInside"
+    android:background="@drawable/takephotobtn"
+    android:layout_centerInParent="true"
+    />    
+
+</RelativeLayout>

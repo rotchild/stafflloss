@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/ipset_title_relative"
+   
+    >
+    <ImageView
+        android:id="@+id/ipback_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mback"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+ <EditText
+     
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/ipset_et"
+     android:paddingLeft="75dp"
+     android:singleLine="true"
+     android:textSize="16sp"
+     android:textColor="@color/black"
+     android:background="@null"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="服务器IP："
+     android:textSize="16sp"
+     android:layout_centerVertical="true"
+    
+     /> 
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/buttoncolorgray"
+    android:orientation="vertical"
+    >
+</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    >
+ <EditText
+    
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/portset_et"
+     android:paddingLeft="90dp"
+     android:singleLine="true"
+     android:textSize="16sp"
+     android:textColor="@color/black"
+     android:background="@null"
+     />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="服务器端口："
+     android:textSize="16sp"
+     android:layout_centerVertical="true"
+    
+     /> 
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/buttoncolorgray"
+    android:orientation="vertical"
+    >
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="IP格式如192.168.1.1"
+    android:textColor="@color/morange"
+    />    
+</LinearLayout>
+   
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_weight="1"
+    android:padding="5dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    
+    >
+<Button
+    android:id="@+id/ipsetOk_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="确定"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:background="@drawable/login_background"
+    />
+
+<!-- 
+ <Button
+    android:id="@+id/ipsefinish_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="退出"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+   
+    android:background="@drawable/login_background"
+    android:layout_marginBottom="10dp"
+    /> 
+
+ -->
+
+</LinearLayout>
+  
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+  >
+<RelativeLayout
+    android:id="@+id/title_relative"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/morange"
+    >
+ <TextView
+     android:id="@+id/notedialog_title"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:textSize="@dimen/buttonFontSize"
+     android:layout_centerVertical="true"
+     android:layout_marginLeft="5dp"
+     />   
+</RelativeLayout>    
+
+ <EditText
+     android:layout_margin="10dp"
+     android:padding="5dp"
+     android:id="@+id/dialog_not_et"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@+id/title_relative"
+     android:layout_above="@+id/button_linear"
+     android:minLines="8"
+     android:maxLines="8"
+     android:gravity="top"
+     android:scrollbars="vertical"
+     android:background="@drawable/linegray_rec_shape"
+     android:textSize="14dp"
+     android:textColor="@color/textgray"
+     />   
+
+<LinearLayout
+    android:id="@+id/button_linear"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+ <RelativeLayout
+     android:layout_width="1dp"
+     android:layout_height="match_parent"
+     android:layout_weight="1"
+     >
+  <Button
+      android:id="@+id/dialog_save_btn"
+      android:layout_width="60dp"
+      android:layout_height="30dp"
+      android:text="保存"
+      android:padding="2dp"
+      android:textSize="@dimen/buttonFontSize"
+      android:textColor="@color/white"
+      android:background="@drawable/dialogredbtn_shape"
+      android:layout_centerInParent="true"
+      />   
+ </RelativeLayout>
+  <RelativeLayout
+     android:layout_width="1dp"
+     android:layout_height="match_parent"
+     android:layout_weight="1"
+     >
+  <Button
+      android:id="@+id/dialog_cancel_btn"
+      android:layout_width="60dp"
+      android:layout_height="30dp"
+      android:text="取消"
+      android:padding="2dp"
+      android:textSize="@dimen/buttonFontSize"
+      android:textColor="@color/white"
+      android:background="@drawable/dialogredbtn_shape"
+      android:layout_centerInParent="true"
+      />   
+ </RelativeLayout>    
+</LinearLayout>
+</RelativeLayout>

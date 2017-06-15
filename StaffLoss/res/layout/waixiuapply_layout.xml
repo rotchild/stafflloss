@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleDivHeight"
+    android:background="@color/morange"
+    android:id="@+id/waixiutaskApply_RL"
+    >
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请外修"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_centerInParent="true"
+        />
+   <!-- 
+     <TextView
+      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜单"
+        android:textSize="@dimen/titleFontSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />  
+    -->
+    <!-- 
+     <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/waixiu_menu"
+       android:src="@drawable/menu"
+       android:layout_alignParentRight="true"
+       android:layout_centerVertical="true"
+       android:layout_marginRight="5dp"
+       />
+    
+     -->
+   
+</RelativeLayout>    
+<ScrollView
+    android:id="@+id/scroll_waixiuapplyDetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/waixiutaskApply_RL"
+    android:layout_above="@+id/waixiu_bottom"
+    
+    >
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="报案号："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_reportNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车牌号："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_carNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+       
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损车牌型号："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_carType_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+          <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+      
+      
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="是否为标的车："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_isTheCar_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+                   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+        
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="标的车牌号："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_theCarNo_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+     <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+       
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="拆检点："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_reportDeport_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout>
+    
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>     
+         
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损员："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />  
+       <TextView
+          android:id="@+id/waixiu_lossStaff_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          />  
+    </RelativeLayout> 
+    
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+      
+      
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="定损员联系电话："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          /> 
+          
+     <ImageView
+           android:id="@+id/callReporterDepartTaskDetail_iv"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:scaleType="centerInside"
+           android:src="@drawable/phone"
+           android:layout_alignParentRight="true"
+           />
+     <!-- 
+     
+            <TextView
+          android:id="@+id/waixiu_lossStaffNumber_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_toLeftOf="@id/callReporterDepartTaskDetail_iv"
+          android:clickable="true"
+          /> 
+      -->  
+ 
+    </RelativeLayout>
+    
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+      
+      
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修日期："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />
+
+       <!-- 
+              <ImageView
+           android:id="@+id/waixiudate_iv"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:scaleType="centerInside"
+           android:src="@drawable/date"
+           android:layout_alignParentRight="true"
+           />
+        -->    
+       <TextView
+          android:id="@+id/waixiu_date_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:clickable="true"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_alignParentRight="true"
+          
+          />  
+    </RelativeLayout>
+    
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修单位："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          /> 
+         
+       <ImageView
+           android:id="@+id/waixiudepartment_iv"
+           android:layout_width="15dp"
+           android:layout_height="15dp"
+           android:scaleType="centerInside"
+           android:src="@drawable/tangle"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           />    
+      
+      <TextView
+          android:id="@+id/waixiu_theDepartment_tv"
+          android:clickable="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="请选择"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/textgray"
+          android:layout_toLeftOf="@id/waixiudepartment_iv"
+          android:layout_centerVertical="true"
+          />     
+     
+    </RelativeLayout>
+    
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修配件："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          
+          />
+      <!-- 
+       <TextView
+          android:id="@+id/waixiu_peijian_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1111"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/black"
+          android:layout_alignParentRight="true"
+          />  
+      
+       -->
+     <EditText
+         android:id="@+id/waixiu_peijian_et"
+         android:layout_width="@dimen/inputwidth"
+         android:layout_height="wrap_content"
+        
+         android:singleLine="true"
+         android:background="@drawable/input_shape"
+         android:layout_alignParentRight="true"
+         android:textColor="@color/textgray"
+         /> 
+      
+    </RelativeLayout>
+    
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修配件价格："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />
+      <!--  
+        <TextView
+          android:id="@+id/waixiu_peijianPrice_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1111"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/black"
+          android:layout_alignParentRight="true"
+          />  
+      
+      -->
+      
+      
+      <EditText
+         android:id="@+id/waixiu_peijianPrice_et"
+         android:layout_width="@dimen/inputwidth"
+         android:layout_height="wrap_content"
+         android:singleLine="true"
+         android:inputType="numberDecimal"
+         android:background="@drawable/input_shape"
+         android:padding="1dp"
+         android:layout_alignParentRight="true"
+         android:textColor="@color/textgray"
+         /> 
+    </RelativeLayout>
+    
+           <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+      
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="外修修复金额："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          /> 
+          
+      <!-- 
+       <TextView
+          android:id="@+id/waixiu_xiufuamount_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1111"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/black"
+          android:layout_alignParentRight="true"
+          />  
+      
+       -->
+        <EditText
+         android:id="@+id/waixiu_xiufuamount_et"
+         android:layout_width="@dimen/inputwidth"
+         android:layout_height="wrap_content"
+         android:padding="1dp"
+         android:singleLine="true"
+         android:inputType="numberDecimal"
+         android:background="@drawable/input_shape"
+         android:layout_alignParentRight="true"
+         android:textColor="@color/textgray"
+         /> 
+    </RelativeLayout>
+    
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:orientation="vertical"
+           android:background="@color/linegray"
+           >
+           
+       </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/detail_padding"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="备注："
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/infoblackgray"
+          android:layout_alignParentLeft="true"
+          />
+      
+      <!-- 
+       <TextView
+          android:id="@+id/waixiu_note_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1111"
+          android:textSize="@dimen/detail_font_size"
+          android:textColor="@color/black"
+          android:layout_alignParentRight="true"
+          />  
+       -->
+       <Button
+           android:id="@+id/waixiu_note_btn"
+           android:layout_width="50dp"
+           android:layout_height="25dp"
+           android:padding="1dp"
+           android:text="添加"
+           android:textSize="@dimen/detail_font_size"
+           android:textColor="@color/white"
+           android:background="@drawable/dialogredbtn_shape"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           />
+       <!-- 
+             <EditText
+         android:id="@+id/waixiu_note_et"
+         android:layout_width="@dimen/inputwidth"
+         android:layout_height="wrap_content"
+         android:padding="1dp"
+         android:singleLine="true"
+         android:background="@drawable/input_shape"
+         android:layout_alignParentRight="true"
+         android:textColor="@color/textgray"
+         />   
+        -->
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        >
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+
+</ScrollView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/waixiu_bottom"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    >
+ 
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:paddingTop="5dp"
+     android:paddingBottom="20dp"
+     >
+  <LinearLayout
+      android:layout_width="1dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+     <Button
+         android:id="@+id/waixiu_yes_btn"
+         android:layout_width="80dp"
+         android:layout_height="40dp"
+         android:text="确定"
+         android:textColor="@color/white"
+         android:textSize="@dimen/buttonFontSize"
+         android:background="@drawable/dialogredbtn_shape"
+         android:layout_gravity="center"
+         />      
+      
+      
+  </LinearLayout>
+  
+    <LinearLayout
+      android:layout_width="1dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+          <Button
+         android:id="@+id/waixiu_no_btn"
+         android:layout_width="80dp"
+         android:layout_height="40dp"
+         android:text="取消"
+         android:textColor="@color/textgray"
+         android:textSize="@dimen/buttonFontSize"
+         android:background="@drawable/dialogwhitebtn_shape"
+         android:layout_gravity="center"
+         />   
+  </LinearLayout>  
+ </LinearLayout>   
+    
+ 
+    
+</RelativeLayout>
+</RelativeLayout>
